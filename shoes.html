@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sweet Kicks</title>
+<title>Sweet Kicks: Shoes</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/reset.css">
@@ -26,16 +26,45 @@
 		</nav>
 	</header>
 	<main>
-		<h1>Walk with <span>style.</span></h1>
-		<img src="images/superstar2019.jpg" alt="White sneakers that say superstar." />
-		<div class="flexrow">
-		<button class="shop">Women's</button>
-		<button class="shop">Men's</button>
+		<h1 class="red">Fresh kicks</h1>
+		<div id="filtermenu">
+			<h2 class="pointer">Filter</h2>
+			<p id = "arrow" class="pointer">&#8595;</p>
 		</div>
-		<h1>Walk with <span>stability.</span></h1>
-		<img src="images/redboots.jpg" alt="A pair of red boots." />
-		<h1>Walk with <span>comfort.</span></h1>
-		<img src="images/sneakers.jpg" alt="Walking on metal beams with white sneakers." />
+		
+		<div id="filters" class="hidden">
+			<div class="filter">Size<span id="openSizes">+</span></div>
+			<div id="sizeDiv" class="hidden">
+				<ul>
+					<li>7</li>
+					<li>7.5</li>
+					<li>8</li>
+					<li>8.5</li>
+					<li>9</li>
+					<li>9.5</li>
+				</ul>
+			</div>
+
+			<div class="filter">Price<span id="price">+</span></div>
+			<div class="filter">Color<span id="color">+</span></div>
+		</div>
+		    <figure>
+		    	<figcaption>Ankle boots</figcaption>
+		    	<img src="images/shoes/ankleboots.png" alt="A pair of ankle boots." />
+		    </figure>
+		    <figure>
+		    	<figcaption>Brown boots</figcaption>
+		    	<img src="images/shoes/boots.png" alt="A pair of sturdy boots." />
+		    </figure>
+		    <figure>
+		    	<figcaption>Running shoes</figcaption>
+		    	<img src="images/shoes/running.png" alt="A pair of running shoes." />
+		    </figure>
+		    <figure>
+		    	<figcaption>Sport shoes</figcaption>
+		    	<img src="images/shoes/sport.png" alt="A pair of sport shoes." />
+		    </figure>
+		<p>Pg. 1 <span class="red">2</span> 3</p>
 	</main>
 	<footer>
 		<nav>
@@ -52,5 +81,6 @@
 		</div>
 	</footer>
 	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/filters.js"></script>
 </body>
 </html>

@@ -5,18 +5,22 @@ function showFilters() {
 	(arrow.textContent === "↓") ? arrow.textContent = "↑" : arrow.textContent = "↓";
 }
 
-function showSizes() {
-	const sizeList = document.getElementById("sizeDiv").classList.toggle("sizes");
-	let span = document.getElementById("openSizes");
-	(span.textContent === "+") ? span.textContent = "-" : span.textContent = "+";
-}
-
 const filterMenu = document.querySelector("#filtermenu");
 filterMenu.addEventListener("click", function() {
 	showFilters();
 });
 
-const openSizes = document.querySelector("#openSizes");
-openSizes.addEventListener("click", function() {
-	showSizes();
-});
+function hasClass(elem, className) {
+    return elem.classList.contains(className);
+}
+
+function openFilter() {
+	document.querySelector("#filters").addEventListener("click", function (e) {
+    if (hasClass(e.target, "toggle")) {
+    	let toShow = e.target.parentNode.children[1];
+    	toShow.classList.toggle("showFilter");
+		(e.target.textContent === "+") ? e.target.textContent = "-" : e.target.textContent = "+";
+    	}
+	});
+}
+openFilter();

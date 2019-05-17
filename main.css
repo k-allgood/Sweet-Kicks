@@ -25,13 +25,13 @@ header {
   font-size: 2em;
   color: #2B2533;
   text-decoration: none;
-  padding: 5% 3% 1% 6%;
+  padding: 5% 3% 1% 8%;
   cursor: pointer;
 }
 
 
 header p {
-  padding: 0 3% 3% 6%;
+  padding: 0 3% 1% 8%;
   font-size: 1.2em;
   color: #2B2533;
 }
@@ -108,7 +108,7 @@ figcaption {
 #filters {
   width: 80%;
   background-color: rgba(241, 241, 241, 0.8);
-  margin-top: 5%;
+  margin-top: 3%;
   padding: 4%;
   border: 2px groove #2B2533;
   border-radius: 2%;
@@ -362,7 +362,7 @@ footer {
   align-items: flex-start;
   justify-content: space-between;
   bottom: 0;
-  padding: 12% 0;
+  padding: 6% 0;
   background-color: #2B2533;
   color: #F5F5F5;
   font-size: 1.2em;
@@ -403,21 +403,44 @@ Media Queries
 ***************/
 @media screen and (min-width: 700px) {
 
-  .bar {
-    visibility: hidden;
+  .bar, .menu-bg {
+    display: none;
   }
 
   .navigation {
     display: flex;
-    margin-left: -280px;
+    margin-left: -200px;
   }
 
   .burgerlink {
+    margin-top: 3%;
     padding-right: 5%;
   }
 
   .change-bg {
     visibility: hidden;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .red {
+    margin-bottom: 5%;
+  }
+
+  #filters {
+    width: 60%;
+    margin-bottom: 5%;
+  }
+
+  .figdiv {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main {
+    padding: 8% 0;
   }
 
   main h1 {
@@ -426,15 +449,19 @@ Media Queries
   }
 
   footer {
-    justify-content: space-around;
-    padding: 6% 0;
+    justify-content: flex-start;
+    padding: 3% 12%;
+  }
+
+  footer nav {
+    margin-right: 12%;
   }
 }
 
 @media screen and (min-width: 1024px) {
 
   #sweet {
-    padding: 2% 3% 0 6%;
+    padding: 2% 3% 0 8%;
     font-size: 2.5em;
   }
 
@@ -451,10 +478,29 @@ Media Queries
   }
   
   main {
-    padding: 6% 0;
+    padding: 6%;
   }
 
   main img {
     margin: 2% 0;
+  }
+
+  #filters {
+    width: 40%;
+    max-width: 410px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  main {
+    padding: 4%;
+  }
+
+  .red {
+    margin-bottom: 2%;
+  }
+
+    footer {
+    padding: 2% 12%;
   }
 }

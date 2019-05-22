@@ -5,7 +5,7 @@
 		Project: Sweet Kicks
 		Author: Krista Allgood
 	-->
-<title>Sweet Kicks: Home</title>
+<title>Sweet Kicks: Contact</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/reset.css">
@@ -30,16 +30,22 @@
 		</nav>
 	</header>
 	<main>
-		<h1>Walk with <span class="bold">style.</span></h1>
-		<img src="images/superstar2019.jpg" alt="White sneakers that say superstar." />
-		<div class="flexrow">
-		<button class="btn">Women's</button>
-		<button class="btn">Men's</button>
-		</div>
-		<h1>Walk with <span class="bold">stability.</span></h1>
-		<img src="images/redboots.jpg" alt="A pair of red boots." />
-		<h1>Walk with <span class="bold">comfort.</span></h1>
-		<img src="images/sneakers.jpg" alt="Walking on metal beams with white sneakers." />
+		<div class="contactdiv">
+		<h1>Contact us</h1>
+		<p>We'd love to hear from you.</p>
+		<form id="contact" name="contactform" action="thanks.html" method="post">
+    			<h2>Get in touch</h2>
+    			<fieldset>
+    			<label>Name<span class="bold">&#42;</span></label>
+     		 	<input name="name" type="text" tabindex="1" required autofocus>
+     		 	<label>E-mail<span class="bold">&#42;</span></label>
+      			<input name="email" type="email" tabindex="2" required>
+      			<label>Comments<span class="bold">&#42;</span></label>
+      			<textarea name="message" tabindex="3" required></textarea>
+      			<input class="btn" id="contactsubmit" type="submit" value="Send">
+    			</fieldset>
+  		</form>
+  		</div>
 	</main>
 	<footer>
 		<nav>

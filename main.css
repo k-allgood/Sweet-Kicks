@@ -1,3 +1,7 @@
+/***
+CSS for Sweet Kicks
+By Krista Allgood
+***/
 body {
   display: flex;
   flex-direction: column;
@@ -21,7 +25,7 @@ header {
 }
 
 #sweet {
-  font-family: 'Asap', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 2em;
   color: #2B2533;
   text-decoration: none;
@@ -50,16 +54,13 @@ main {
 main h1 {
 	margin: 4% 0;
 	padding: 4% 0;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: normal;
+  font-family: "Kanit", sans-serif;
 	color: #2B2533;
+  background-color: #F1F1F1;
 	border-top: 2px solid #2B2533;
 	border-bottom: 2px solid #2B2533;
-}
-
-main h1 span {
-	font-weight: bold;
-	color: #800000;
 }
 
 .red {
@@ -68,11 +69,30 @@ main h1 span {
   font-weight: bold;
 }
 
+.bold {
+  font-weight: bold;
+  color: #800000;
+}
+
 main img {
 	width: 80%;
   max-width: 360px;
 	margin: 4% 0;
 	border: solid 2px #A6ACB8;
+}
+
+.aboutdiv {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.about {
+  margin-top: -5%;
+  margin-bottom: 12%;
 }
 
 figure {
@@ -105,7 +125,7 @@ figcaption {
   align-items: center;
 }
 
-#filters {
+#allFilters {
   width: 80%;
   background-color: rgba(241, 241, 241, 0.8);
   margin-top: 3%;
@@ -238,7 +258,7 @@ figcaption {
 	justify-content: space-evenly;
 }
 
-.shop {
+.btn {
 	width: 130px;
 	margin: 12% 2%;
 	padding: 3% 0%;
@@ -252,7 +272,7 @@ figcaption {
   box-shadow: 1px 2px 2px #130F16;
 }
 
-.shop:hover {
+.btn:hover {
 	background-color: #A6ACB8;
 	transform: translateY(-2px);
 	box-shadow: inset 0px 0px 2px #808080;
@@ -357,6 +377,69 @@ figcaption {
   visibility: visible;
 }
 
+.contactdiv {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6%;
+}
+
+.contactdiv p {
+  margin: 6% 0;
+}
+
+#contact {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(241, 241, 241, 0.9);
+  border: 2px groove #2B2533;
+  border-radius: 2%;
+  padding: 4%;
+}
+
+#contact fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  display: flex;
+  margin-top: 8%;
+  font-size: .8em;
+}
+
+#contact textarea {
+  min-height: 50px;
+  resize: none;
+}
+
+#contactsubmit {
+  flex-direction: column;
+  background-color: #A1BFDA;
+  margin: 6% 0;
+}
+
+#contactsubmit:hover {
+  background-color: #A6ACB8;
+  transform: translateY(-2px);
+  box-shadow: inset 0px 0px 2px #808080;
+}
+
+.thanks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20%;
+}
+
+.thanks p {
+  margin: 5% 0 5% 0;
+}
+
 footer {
   display: flex;
   align-items: flex-start;
@@ -398,9 +481,9 @@ footer ul li {
   list-style: none;
 }
 
-/***************
+/******************************
 Media Queries
-***************/
+******************************/
 @media screen and (min-width: 700px) {
 
   .bar, .menu-bg {
@@ -429,7 +512,11 @@ Media Queries
     margin-bottom: 5%;
   }
 
-  #filters {
+  .about {
+    margin-top: -3%;
+  }
+
+  #allFilters {
     width: 60%;
     margin-bottom: 5%;
   }
@@ -446,6 +533,10 @@ Media Queries
   main h1 {
     margin: 1% 0;
     padding: 1% 0;
+  }
+
+  #contact {
+    width: 60%;
   }
 
   footer {
@@ -485,7 +576,15 @@ Media Queries
     margin: 2% 0;
   }
 
-  #filters {
+  #contact {
+    width: 30%;
+  }
+
+  .aboutdiv {
+    width: 60%;
+  }
+
+  #allFilters {
     width: 40%;
     max-width: 410px;
   }
@@ -496,11 +595,33 @@ Media Queries
     padding: 4%;
   }
 
+  .about {
+    margin-top: -1%;
+  }
+
   .red {
     margin-bottom: 2%;
   }
 
     footer {
     padding: 2% 12%;
+  }
+}
+
+@media screen and (min-width: 360px) and (min-height: 700px) {
+  .thanks {
+    width: 90%;
+    margin-top: 20%;
+    margin-bottom: 55%;
+  }
+}
+
+@media screen and (min-height: 1165px) {
+  main {
+    padding: 14% 0 31% 0;
+  }
+
+  .contactdiv p {
+    margin: 9% 6% 6% 5%;
   }
 }

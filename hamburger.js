@@ -1,3 +1,4 @@
+//JS for hamburger menu on Sweet Kicks
 function onClickMenu() {
 	document.getElementById("menu").classList.toggle("change");
 	document.getElementById("navigation").classList.toggle("change");
